@@ -87,7 +87,8 @@ h6 {
 }
 
 .nav__link:hover {
-    color: rgb(52, 84, 122);
+    transition: 1s;
+    color: rgb(238, 239, 241);
 }
 
 .hero__content {
