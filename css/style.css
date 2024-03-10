@@ -87,8 +87,7 @@ h6 {
 }
 
 .nav__link:hover {
-    transition: 1s;
-    color: rgb(238, 239, 241);
+    color: rgb(52, 84, 122);
 }
 
 .hero__content {
@@ -152,7 +151,7 @@ h6 {
     text-align: center;
 }
 
-.abot__content {
+.about__content {
     max-width: 540px;
     margin: 0 auto;
 }
@@ -261,3 +260,33 @@ h6 {
     height: 450px;
     object-fit: contain;
 }
+
+.demo {}
+
+.container {}
+
+.demo__content {}
+
+.demo__text-wrap {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.demo__text1 {
+    font-weight: 500;
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.demo__text2 {
+    font-weight: 400;
+    line-height: 164%;
+    color: #727272;
+    text-align: center;
+}
+
+.demo__vid-wrap {}
+
+.demo__vid {}
