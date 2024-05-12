@@ -37,6 +37,7 @@ h6 {
 
 .wrapper {
     min-height: 100%;
+    overflow: hidden;
 }
 
 .hero {
@@ -47,8 +48,9 @@ h6 {
 }
 
 .container {
-    max-width: 1106px;
+    max-width: 1116px;
     margin: 0 auto;
+    padding: 0px 5px;
 }
 
 .header {
@@ -59,6 +61,7 @@ h6 {
 }
 
 .logo {
+    display: inline-block;
     width: 96px;
     height: 60px;
 }
@@ -92,6 +95,7 @@ h6 {
 
 .hero__content {
     display: flex;
+    gap: 30px;
 }
 
 .hero__img-wrap {
@@ -143,6 +147,11 @@ h6 {
     display: inline-block;
     padding: 25px 40px;
     text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #3f81d3;
+    transition: background 0.5s;
 }
 
 .about {
@@ -234,6 +243,11 @@ h6 {
     font-size: 16px;
     color: #727272;
     margin-bottom: 14px;
+    transition: color 0.5s;
+}
+
+.skill__desc:hover {
+    color: #34547a;
 }
 
 /* стили для meter */
@@ -261,15 +275,19 @@ h6 {
     object-fit: contain;
 }
 
-.demo {}
-
-.container {}
+.demo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #eeeff1;
+    text-align: center;
+}
 
 .demo__content {}
 
 .demo__text-wrap {
     max-width: 540px;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 .demo__text1 {
@@ -287,6 +305,152 @@ h6 {
     text-align: center;
 }
 
-.demo__vid-wrap {}
+.demo__vid-wrap {
+    max-width: 100%;
+    position: relative;
+}
 
-.demo__vid {}
+.demo__play {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+}
+
+.demo__play:active {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.projects__items {
+    flex: 1 0 25%;
+}
+
+.work {}
+
+.project__link {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.projects {}
+
+.projects__items {}
+
+.work {}
+
+
+.work__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work__overlay-wrap {
+    position: absolute;
+    background-color: rgba(52, 84, 122, 0.8);
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.work__overlay {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.project__link:hover .work__overlay-wrap {
+    height: 100%;
+    transition: 0.4s;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.partners__list {
+    display: flex;
+    column-gap: 100px;
+    justify-content: space-between;
+}
+
+.partners__items {
+    width: 255px;
+    height: 120px;
+}
+
+.partners__icon {}
+
+.feedback {
+    background-color: #eeeff1;
+    padding: 100px 0px;
+}
+
+.feedback__content {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.feedback__desc {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.form__row {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 20px;
+}
+
+.form__row:last-child {
+    margin: 0;
+}
+
+.form__input {
+    padding: 10px 5px;
+    border: 0;
+    flex: 1;
+}
+
+.form__userinfo {}
+
+.form__text {
+    padding-bottom: 75px;
+    resize: none;
+    /* resize: none; - убрать изменение textarea */
+}
+
+.form__btn-wrap {
+    text-align: center;
+}

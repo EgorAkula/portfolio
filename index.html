@@ -10,16 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body bgcolor="snow">
     <div class="wrapper">
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <header class="header">
-                    <div class="logo header__logo">
+                    <a href="#" class="logo header__logo">
                         <img src="img/WD.png" alt="logo" class="logo__img">
-                    </div>
+                    </a>
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item">
@@ -57,7 +58,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about__content">
                     <h2 class="section-title">Обо мне</h2>
@@ -66,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section class="achievements">
+        <section class="achievements" id="achievement">
             <div class="container">
                 <ul class="achievements__list">
                     <li class="achievements__items achievement">
@@ -127,14 +128,14 @@
                 </ul>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="container">
                 <div class="skills__content">
                     <div class="skills__desc">
                         <h2 class="section-title skills__title">Мои навыки</h2>
                         <ul class="skills__list">
                             <li class="skills__item skill">
-                                <div class="skill__desc">Macdonalds</div>
+                                <div class="skill__desc">1488</div>
                                 <meter class="skill__meter" min="0" max="100" value="60"></meter>
                             </li>
                         </ul>
@@ -152,12 +153,12 @@
                         </ul>
                     </div>
                     <div class="skills__img-wrap">
-                        <img src="img/catter.gif" alt="Аватарка" class="skills__img">
+                        <img src="img/funny.gif" alt="Аватарка" class="skills__img">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="demo">
+        <section class="demo" id="demo">
             <div class="container">
                 <div class="demo__content">
                     <div class="demo__text-wrap">
@@ -167,7 +168,126 @@
                             века.</p>
                     </div>
                     <div class="demo__vid-wrap">
+                        <img src="img/play-button.png" alt="Кнопка просмотра" class="demo__play">
                         <img src="img/video.svg" alt="Видео" class="demo__vid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <ul class="projects__list">
+                <li class="projects__items work">
+                    <a href="" class="project__link">
+                        <img src="img/work.jpg" alt="work" class="work__img">
+                        <div class="work__overlay-wrap">
+                            <img src="img/view.svg" alt="eye" class="work__overlay">
+                        </div>
+                    </a>
+                </li>
+                <li class="projects__items work">
+                    <a href="" class="project__link">
+                        <img src="img/stiker.jpg" alt="work" class="work__img">
+                        <div class="work__overlay-wrap">
+                            <img src="img/view.svg" alt="eye" class="work__overlay">
+                        </div>
+                    </a>
+                </li>
+                <li class="projects__items work">
+                    <a href="" class="project__link">
+                        <img src="img/work.jpg" alt="work" class="work__img">
+                        <div class="work__overlay-wrap">
+                            <img src="img/view.svg" alt="eye" class="work__overlay">
+                        </div>
+                    </a>
+                </li>
+                <li class="projects__items work">
+                    <a href="" class="project__link">
+                        <img src="img/stiker.jpg" alt="work" class="work__img">
+                        <div class="work__overlay-wrap">
+                            <img src="img/view.svg" alt="eye" class="work__overlay">
+                        </div>
+                    </a>
+                </li>
+                <li class="projects__items work">
+                    <a href="" class="project__link">
+                        <img src="img/work.jpg" alt="work" class="work__img">
+                        <div class="work__overlay-wrap">
+                            <img src="img/view.svg" alt="eye" class="work__overlay">
+                        </div>
+                    </a>
+                </li>
+                <li class="projects__items work">
+                    <a href="" class="project__link">
+                        <img src="img/stiker.jpg" alt="work" class="work__img">
+                        <div class="work__overlay-wrap">
+                            <img src="img/view.svg" alt="eye" class="work__overlay">
+                        </div>
+                    </a>
+                </li>
+                <li class="projects__items work">
+                    <a href="" class="project__link">
+                        <img src="img/work.jpg" alt="work" class="work__img">
+                        <div class="work__overlay-wrap">
+                            <img src="img/view.svg" alt="eye" class="work__overlay">
+                        </div>
+                    </a>
+                </li>
+                <li class="projects__items work">
+                    <a href="" class="project__link">
+                        <img src="img/stiker.jpg" alt="work" class="work__img">
+                        <div class="work__overlay-wrap">
+                            <img src="img/view.svg" alt="eye" class="work__overlay">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="partners" id="partners">
+            <div class="container">
+                <ul class="partners__list">
+                    <li class="partners__items">
+                        <a href="#">
+                            <img src="img/MS.png" alt="partner" class="partners__icon">
+                        </a>
+                    </li>
+                    <li class="partners__items">
+                        <a href="#">
+                            <img src="img/MS.png" alt="partner" class="partners__icon">
+                        </a>
+                    </li>
+                    <li class="partners__items">
+                        <a href="#">
+                            <img src="img/MS.png" alt="partner" class="partners__icon">
+                        </a>
+                    </li>
+                    <li class="partners__items">
+                        <a href="#">
+                            <img src="img/MS.png" alt="partner" class="partners__icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="feedback" id="feedback">
+            <div class="cantainer">
+                <div class="feedback__content">
+                    <div class="feedback__desc">
+                        <h2 class="demo__text1">Хотите свой веб-сайт?</h2>
+                        <p class="demo__text2">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
+                            века.</p>
+                    </div>
+                    <form class="form">
+                        <div class="form__row">
+                            <input type="text" class="form__input form__userinfo" placeholder="Ваше имя">
+                            <input type="text" class="form__input form__userinfo" placeholder="Ваш E-mail">
+                        </div>
+                        <div class="form__row">
+                            <textarea name="" class="form__input form__text" placeholder="Сообщение"></textarea>
+                        </div>
+                    </form>
+                    <div class="form__btn-wrap">
+                        <button class="btn">Отправить</button>
                     </div>
                 </div>
             </div>
